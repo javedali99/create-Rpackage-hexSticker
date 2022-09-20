@@ -1,1 +1,1 @@
-# create-Rpackage-hexSticker
+# Create Hex Sticker for R Package
