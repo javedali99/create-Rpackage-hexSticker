@@ -1,3 +1,11 @@
+# ===============================================
+# Author: Javed Ali (www.javedali.net)
+# ===============================================
+
+# ===============================================
+# Reqquired libraries
+# ===============================================
+
 # Install the hexSticker package
 # install.packages("hexSticker")
 
@@ -7,9 +15,9 @@ library(magick)     # Advanced image processing
 library(sysfonts)   # font selection
 library(tidyverse)
 
-
+# ===============================================
 # Sticker function
-
+# ===============================================
 sticker(
   subplot, #              * image/ggplot object
   s_x = 0.8, #            * subplot x-position (left/right position)
@@ -45,13 +53,18 @@ sticker(
   dpi = 300 # * Dots Per Inch resolution
 )
 
+# ===============================================
 # Create your sticker
+# ===============================================
+
+# Load the image to add on the sticker
 graph_img <- image_read('line-graph.png')
 
+# Load fonts for custom font styles
 fonts_dataset <- font_files()
+font_add("Old English", "OLDENGL.TTF")
 
-# font_add("Old English", "OLDENGL.TTF")
-
+# Create sticker
 sticker(
   subplot = graph_img,
   package = "MultiHazard",
