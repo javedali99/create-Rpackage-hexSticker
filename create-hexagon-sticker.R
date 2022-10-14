@@ -27,7 +27,7 @@ sticker(
   package, #              * package name to be displayed in hexSticker
   p_x = 1, #              * package name x-position
   p_y = 1.4, #            * package name y-position
-  p_color = "#FFFFFF", #  * package name color
+  p_color = "#FFFFFF", #  * package name color 
   p_family = "Aller_Rg", #* package name font family
   p_fontface = "plain", # * package name font face
   p_size = 8, #           * package name font size
@@ -62,7 +62,7 @@ graph_img <- image_read('line-graph.png')
 
 # Load fonts for custom font styles
 fonts_dataset <- font_files()
-font_add("Old English", "OLDENGL.TTF")
+# font_add("Old English", "OLDENGL.TTF")
 
 # Create sticker
 sticker(
@@ -85,7 +85,7 @@ sticker(
   l_width = 3,
   l_height = 3,
   l_alpha = 0.3,
-  p_color = 'purple',
+  p_color = 'blue', #purple
   p_family = "Old English",
 ) %>% print()
 
